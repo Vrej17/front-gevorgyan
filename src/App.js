@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import CardsList from "./common/CardsList/CardsList";
+import Header from "./Header/Header";
+import "./App.css";
+import { createContext, useState } from "react";
+
+const CardsContext = createContext(null);
 
 function App() {
+  const [cards, setCards] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CardsContext.Provider value={{ cards, setCards }}>
+      <div>
+        <Header />
+        <div className="layout-container">
+          <CardsList />
+        </div>
+      </div>
+    </CardsContext.Provider>
   );
 }
 
 export default App;
+export {CardsContext}

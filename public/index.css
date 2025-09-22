@@ -1,0 +1,13 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow: hidden;
+  color: #333;
+  margin: 0;
+}
+
+#root {
+  height: 100vh; 
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
