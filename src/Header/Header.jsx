@@ -3,7 +3,7 @@ import Menu from "../common/Menu/Menu";
 import Search from "../common/Search/Search";
 import BurgerMenu from "../icons/BurgerMenu";
 import Logo from "../icons/Logo";
-import "./header.css";
+import "./Header.css";
 import SideBarMenu from "../common/Sidebar/SidebarMenu";
 import useHeaderSlide from "../hooks/useHeaderSlide";
 
